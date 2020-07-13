@@ -43,7 +43,7 @@ i
 
 /*******************loader css start****************/
 .loader_bg{
-	 position: fixed;
+	 position: relative;
 	 z-index: 9999;
 	 background-color: #fff;
 	 width: 100%;
@@ -55,8 +55,10 @@ i
 	width: 150px;
 	height: 150px;
 	position: absolute;
-	top: calc(50vh - 75px);
-	left: calc(50vh - 75px);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
 }
 .loader:before, loader:after{
 	content: '';
@@ -172,6 +174,7 @@ i
 {
 	font-size: 1.3rem;
 	padding: 10px 0 20px 0;
+	color: #fff;
 }
 
 
